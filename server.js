@@ -22,7 +22,7 @@ app.setNotFoundHandler((req, reply) => {
 });
 
 // Run the server!
-app.listen(PORT, (err, address) => {
+app.listen(3000, (err, address) => {
   if (err) {
     app.log.error(err);
     process.exit(1);
