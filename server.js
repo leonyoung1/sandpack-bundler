@@ -2,7 +2,7 @@ const fastify = require("fastify");
 const fastifyStatic = require("fastify-static");
 const path = require("path");
 
-const PORT = +(process.env.PORT || "3000");
+const PORT = 3000// +(process.env.PORT || "3000");
 
 const app = fastify();
 
@@ -22,7 +22,7 @@ app.setNotFoundHandler((req, reply) => {
 });
 
 // Run the server!
-app.listen(3000, (err, address) => {
+app.listen(PORT, (err, address) => {
   if (err) {
     app.log.error(err);
     process.exit(1);
