@@ -1,5 +1,5 @@
-import Hook from 'console-feed/lib/Hook';
-import { Encode } from 'console-feed/lib/Transform';
+import Hook from '@nicksrandall/console-feed/lib/Hook';
+import { Encode } from '@nicksrandall/console-feed/lib/Transform';
 
 import * as logger from '../utils/logger';
 
