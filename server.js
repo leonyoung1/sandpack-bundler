@@ -2,7 +2,7 @@ const fastify = require("fastify");
 const fastifyStatic = require("fastify-static");
 const path = require("path");
 
-const PORT = +(process.env.PORT || "4587");
+const PORT = +(process.env.PORT || "3000");
 
 const app = fastify();
 
