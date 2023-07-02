@@ -1,5 +1,5 @@
 const fastify = require("fastify");
-const fastifyStatic = require("fastify-static");
+const fastifyStatic = require("@fastify/static");
 const path = require("path");
 
 const PORT = 3000// +(process.env.PORT || "3000");
