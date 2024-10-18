@@ -22,12 +22,23 @@ app.setNotFoundHandler((req, reply) => {
 });
 
 // Run the server!
-app.listen(PORT, (err, address) => {
-  if (err) {
-    app.log.error(err);
+fastify.listen({ port: PORT}) // You might want to adjust the host as needed
+  .then((address) => {
+    console.log(`Server is listening on ${address}`);
+  })
+  .catch((err) => {
+    console.error(err);
     process.exit(1);
-  }
+  });
 
-  // Server is now listening on ${address}
-  console.log(`Server is listening on http://localhost:${PORT}`);
-});
+
+// Run the server!
+// app.listen(PORT, (err, address) => {
+//   if (err) {
+//     app.log.error(err);
+//     process.exit(1);
+//   }
+
+//   // Server is now listening on ${address}
+//   console.log(`Server is listening on http://localhost:${PORT}`);
+// });
