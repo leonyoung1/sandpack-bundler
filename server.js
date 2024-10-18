@@ -22,7 +22,7 @@ app.setNotFoundHandler((req, reply) => {
 });
 
 // Run the server!
-app.listen({ port: PORT}) // You might want to adjust the host as needed
+app.listen({ port: PORT, host: '0.0.0.0' }) // You might want to adjust the host as needed
   .then((address) => {
     console.log(`Server is listening on ${address}`);
   })
